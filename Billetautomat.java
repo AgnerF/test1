@@ -19,7 +19,7 @@ public class Billetautomat {
 	 * Opret en billetautomat der sælger billetter til 10 kr.
 	 */
 	public Billetautomat() {
-		billetpris = 10;
+		billetpris = 20;
 		balance = 0;
 		antalBilletterSolgt = 0;
 	}
@@ -111,8 +111,9 @@ public class Billetautomat {
 	public void setBilletpris(int billetpris) {
 		if (montørtilstand) {
 			this.billetpris = billetpris;
-		}
-	}
+		} else {
+			System.out.println("Fejl. Du har ikke logget ind som montør");
+			return 0;
 
 	public void nulstil() {
 		if (montørtilstand) {
