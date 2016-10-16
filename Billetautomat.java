@@ -1,6 +1,6 @@
 /**
  * Billetautomat for Eclipse Veterantog
- * Version 2.00
+ * Version 2.01
  * Skrevet af: Agner Fog
  * Dato: 10 Sept. 1916
  */
@@ -19,7 +19,7 @@ public class Billetautomat {
 	 * Opret en billetautomat der sælger billetter til 10 kr.
 	 */
 	public Billetautomat() {
-		billetpris = 10;
+		billetpris = 16;
 		balance = 0;
 		antalBilletterSolgt = 0;
 	}
